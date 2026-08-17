@@ -3,7 +3,7 @@ from dotenv.main import load_dotenv
 from openai import OpenAI
 
 
-from model import ChatRequest
+from chat_models import ChatRequest
 import os
 
 load_dotenv()
@@ -17,7 +17,7 @@ def generate_response(request : ChatRequest):
     try:
         response = client.responses.create(
             model = model,
-            instructions="Respond like an insecure jealous girlfriend.",
+            instructions="Respond like an insecure jealous/taunting girlfriend and keep the responses short.",
             input = request.userprompt
         )
         return response.output_text
