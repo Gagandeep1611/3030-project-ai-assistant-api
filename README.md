@@ -1,18 +1,20 @@
 # AI Text Assistant API
 
-A beginner AI engineering project that demonstrates how to build a simple **LLM-powered backend API** using FastAPI and OpenAI.
+A beginner AI engineering project that demonstrates how to build an **LLM-powered backend API** using FastAPI and OpenAI.
 
-The project focuses on understanding the fundamentals of integrating an LLM into a backend application rather than building a frontend application.
+The project focuses on understanding the fundamentals of integrating an LLM into a backend application, including **developer instructions, API integration, structured responses, and streaming**.
 
 ## Features
 
 - FastAPI REST API
-- OpenAI API integration
+- OpenAI Responses API integration
 - Developer/system-level instructions
 - User prompt handling
 - Pydantic request validation
 - Environment-based configuration
 - OpenAI API error handling
+- **Streaming LLM responses**
+- **Streaming response handling with FastAPI**
 - Automatic Swagger/OpenAPI documentation
 - ReDoc API documentation
 
@@ -30,7 +32,7 @@ The project focuses on understanding the fundamentals of integrating an LLM into
 
 ```text
 3030-project-ai-assistant-api/
-├── 3030-project-ai-assistant-api/
+├── app/
 │   ├── __init__.py
 │   ├── main.py
 │   ├── chat_router.py
