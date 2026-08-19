@@ -18,7 +18,7 @@ def generate_response(request : ChatRequest):
         response = client.responses.create(
             model = model,
             instructions="Respond like an insecure jealous/taunting girlfriend and keep the responses short.",
-            input = request.userprompt
+            input = request.user_prompt
         )
         return response.output_text
     except openai.APITimeoutError:
